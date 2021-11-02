@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <style>
+
+        html {
+            font-family: -apple-system, 'Roboto', 'Arial', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.55;
+            box-sizing: border-box;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 0 auto 5em;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 1em;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 2em;
+        }
+
+        header > h2 {
+            margin: 0;
+            font-size: 1.1em;
+            font-weight: 700;
+        }
+
+        header a {
+            background-color: #e5e7eb;
+            color: #6b7280;
+            display: inline-block;
+            width: auto;
+            padding: 0.5em 1em;
+            border-radius: 8px;
+            margin-right: 1em;
+            font-weight: 600;
+            font-size: .9em;
+            text-decoration: none;
+        }
+
+        #hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            border-bottom: 1px solid #eee;
+        }
+
+        #hero #text {
+            display: block;
+            padding: 1em 3em 1em 0;
+        }
+
+        #hero span {
+            font-size: 1.1em;
+            color: #6366f1;
+            font-weight: 600;
+        }
+
+        #hero h1 {
+            font-size: 2.5em;
+            line-height: 1.2em;
+            font-weight: 800;
+            margin: 1.8rem 0;
+        }
+
+        #hero p {
+            color: #656565;
+        }
+
+        #hero figure {
+            max-width: 45%;
+        }
+
+        #hero figure img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        #hero .buttons {
+            margin: 2rem 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        #hero .buttons a {
+            background-color: #e5e7eb;
+            color: #6b7280;
+            display: inline-block;
+            width: auto;
+            padding: 0.8em 1em;
+            border-radius: 8px;
+            margin-right: 1em;
+            font-weight: 600;
+            font-size: .9em;
+            text-decoration: none;
+        }
+
+        #hero .buttons a:first-child {
+            background-color: #6366f1;
+            color: #fff;
+        }
+
+        #about {
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        #about p {
+            max-width: 80%;
+            margin: 2.5em auto;
+        }
+
+        #features {
+            padding: 2.5em 1em;
+            border-bottom: 1px solid #eee;
+        }
+
+        #features h2 {
+            margin: 0 0 1em 0;
+            text-align: center;
+        }
+
+        #features .grid {
+            border-radius: 20px;
+            padding: 0 1em;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1em;
+        }
+
+        #features .grid > div {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+            align-items: flex-start;
+            padding: 1.5rem 1rem;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 8px;
+        }
+
+        #features .grid h3 {
+            display: block;
+            margin: 0 0 .5rem;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        #features .grid p {
+            display: block;
+            margin: 0;
+            color: #656565;
+            font-size: 0.875em;
+        }
+
+        #pricing, #contact, #getStarted {
+            padding: 2.5em 1em;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        #pricing p, #contact p, #getStarted p {
+            color: #656565;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<main>
+
+    <header>
+        <h2>Bonsy</h2>
+        <a href="#contact">Contact</a>
+    </header>
+
+
+    <div id="hero">
+
+        <div id="text">
+            <span>Very proud to introduce</span>
+            <h1>Bonsy RecMan WordPress Plugin</h1>
+            <p>Auto-publish job posts from RecMan to your WordPress site. Easily set up RecMan job posts on your
+                site.</p>
+            <div class="buttons">
+                <a href="/wp/bonsay-recman.zip">Download</a>
+                <a href="https://bonsy.gitbook.io/bonsay-recman-wp/" target="_blank">Read documentation</a>
+            </div>
+        </div>
+
+        <figure>
+            <img src="https://images.unsplash.com/photo-1618004912476-29818d81ae2e?auto=format&q=75&fit=crop&w=1000"
+                 loading="lazy" alt="Photo by Fakurian Design"/>
+        </figure>
+
+    </div>
+
+
+    <div id="about">
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facilis ipsa labore molestiae qui
+            quod
+            sapiente voluptatem? Aspernatur distinctio nesciunt obcaecati odio omnis quidem sapiente tempora totam!
+            Debitis odit, porro?
+        </p>
+
+    </div>
+
+    <div id="features">
+
+        <h2>Why use this Bonsy plugin for RecMan</h2>
+
+        <div class="grid">
+
+            <div>
+                <h3>Automatic publish job posts</h3>
+                <p>Plugin will automatically cache data</p>
+            </div>
+
+            <div>
+                <h3>Automatic update of job posts</h3>
+                <p>Plugin will automatically cache data</p>
+            </div>
+
+            <div>
+                <h3>Full control over design</h3>
+                <p>Plugin will automatically cache data</p>
+            </div>
+
+            <div>
+                <h3>Lightweight and fast</h3>
+                <p>Plugin will automatically cache data</p>
+            </div>
+
+            <div>
+                <h3>Automatic caching</h3>
+                <p>Automatic caching will help to not exceed API limits in </p>
+            </div>
+
+            <div>
+                <h3>SEO friendly URL and meta data</h3>
+                <p>Plugin will automatically cache data</p>
+            </div>
+
+            <div>
+                <h3>Keep site updated</h3>
+                <p>Plugin will automatically cache data</p>
+            </div>
+
+            <div>
+                <h3>Sorts job posts by the most resent job post on top of page.</h3>
+                <p>Plugin will automatically cache data</p>
+            </div>
+
+            <div>
+                <h3>Backwards compatible</h3>
+                <p>The plugin will support deprecated changes in the API.</p>
+            </div>
+
+            <div>
+                <h3>Cleaner HTML code</h3>
+                <p>The service will output a cleaner HTML for job posts, so it is easier to incorporate your
+                    design </p>
+            </div>
+
+            <div>
+                <h3>Support multiple languages</h3>
+                <p>Some RecMan API values must be translated and mapped before you can show it on your site. This
+                    plugin
+                    will automatically do this for you.</p>
+            </div>
+
+            <div>
+                <h3>Filter job posts</h3>
+                <p>Filter job posts to certain departments or corporations.</p>
+            </div>
+
+            <div>
+                <h3>Search function</h3>
+                <p>Use built-in search function to search across all job posts.</p>
+            </div>
+
+            <div>
+                <h3>User filter</h3>
+                <p>Incorporate filters so candidates can show job posts for certain positions, locations and other
+                    fields you like to filter.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="getStarted">
+        <h2>Get Started</h2>
+        <p>To get started just download the plugin and upload it to WordPress. When you activate the plugin a RecMan icon
+            will appear in the admin menu. From here you only need to register using your RecMan API key.</p>
+        <p>
+            When you register with the API key a Bonsy account with free trial will start. From here you got 30 days to
+            test and get things running before you need to subscribe to keep using the service.
+        </p>
+        <div class="buttons">
+            <a href="">Read documentation</a>
+        </div>
+    </div>
+
+    <div id="pricing">
+        <h2>Pricing</h2>
+        <p>For information regarding pricing and subscription please contact Bonsy.</p>
+    </div>
+
+    <div id="contact">
+        <h2>Contact Bonsy</h2>
+        <p>
+            <span>kristoffer[at]bonsy.no</span>
+            <span>+47 97156620</span>
+        </p>
+
+    </div>
+
+</main>
+
+
+</body>
+</html>
+
+
