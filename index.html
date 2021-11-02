@@ -104,14 +104,14 @@
             box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
         }
 
-        #hero .buttons {
+        .buttons {
             margin: 2rem 0;
             display: flex;
             justify-content: flex-start;
             align-items: center;
         }
 
-        #hero .buttons a {
+        .buttons a {
             background-color: #e5e7eb;
             color: #6b7280;
             display: inline-block;
@@ -124,7 +124,7 @@
             text-decoration: none;
         }
 
-        #hero .buttons a:first-child {
+        .buttons a:first-child {
             background-color: #6366f1;
             color: #fff;
         }
@@ -189,6 +189,12 @@
 
         #pricing p, #contact p, #getStarted p {
             color: #656565;
+            max-width: 80%;
+            margin: 0 auto 1em;
+        }
+
+        #getStarted .buttons {
+            justify-content: center;
         }
 
         @media only screen and (max-width: 600px) {
@@ -242,6 +248,7 @@
             <p>
                 Save time and automatically publish job posts from RecMan to your company website. Incorporate your
                 design and brand and let the plugin and RecMan do the rest.
+                Fully automate the workflow and keep your website updated without additional tasks.
             </p>
             <div class="buttons">
                 <a href="/wp/bonsay-recman.zip">Download</a>
@@ -273,48 +280,50 @@
         <div class="grid">
 
             <div>
-                <h3>Showcase your job posts</h3>
+                <h3>Automate your workflow</h3>
                 <p>
-                    Automatically publish job posts from RecMan to your website.
-                    No need to even log in to WordPress.
+                    Automatically show job posts from RecMan on your company site.
+                    No need to log into WordPress.
                 </p>
             </div>
 
             <div>
                 <h3>Full control over design</h3>
                 <p>
-                    The plugin handles all the technical implementation.
-                    All you have to do is to implement your design and branding. You select the fields
-                    you want to show.
+                    Implement your design/brand and select the fields you want to show. The plugin will handle
+                    all the technical implementation.
                 </p>
             </div>
 
             <div>
-                <h3>Automatic caching</h3>
-                <p>Automatic caching will help to not exceed API limits as well as keep your site fast and safe.</p>
+                <h3>Built-in caching</h3>
+                <p>Automatic caching will help you to not exceed RecMan API limits, as well as it keeps your site safe and fast.</p>
             </div>
 
             <div>
                 <h3>SEO friendly</h3>
                 <p>
-                    The plugin will generate SEO friendly job post URL's as well as including metadata for
-                    search engines and social media.
+                    Get SEO friendly URL's and metadata/tags for search engines and social media sharing.
                 </p>
             </div>
 
             <div>
                 <h3>Backwards compatible</h3>
-                <p>The plugin will support deprecated changes in the API.</p>
+                <p>
+                    Don't worry about keeping your code updated. The plugin is backwards compatible with the RecMan API, so changes in the API will not break the site.</p>
             </div>
 
             <div>
-                <h3>Keep site updated</h3>
-                <p>Plugin will automatically cache data</p>
+                <h3>Keep plugin updated through WordPress</h3>
+                <p>New updates to the plugin will be available through WordPress plugin updates.</p>
             </div>
 
             <div>
-                <h3>Sorts job posts by the most resent job post on top of page.</h3>
-                <p>Plugin will automatically cache data</p>
+                <h3>Support multiple languages</h3>
+                <p>
+                    Automatic translation based on selected language. Some RecMan API fields must be translated to make
+                    them readable. Currently, supports Norwegian, English and Swedish. Additional languages can be added on request.
+                </p>
             </div>
 
             <div>
@@ -326,27 +335,42 @@
             </div>
 
             <div>
-                <h3>Support multiple languages</h3>
-                <p>
-                    Some RecMan API values must be translated and mapped before you can show it on your site. This
-                    plugin will automatically do this for you.
+                <h3>Filter by department</h3>
+                <p>Want to only show job post from certain departments or corporations in RecMan?
+                    The plugin has built-in features for filtering job posts.
                 </p>
             </div>
 
             <div>
-                <h3>Filter job posts</h3>
-                <p>Filter job posts to certain departments or corporations.</p>
-            </div>
-
-            <div>
-                <h3>Search function</h3>
-                <p>Use built-in search function to search across all job posts.</p>
+                <h3>Supports free text search</h3>
+                <p>
+                    Use the built-in search function to let visitors search through job posts.</p>
             </div>
 
             <div>
                 <h3>User filter</h3>
                 <p>Incorporate filters so candidates can show job posts for certain positions, locations and other
                     fields you like to filter.</p>
+            </div>
+
+            <div>
+                <h3>Many helper functions</h3>
+                <p>Built-in helper functions to show job post and position counts, excerpt text and job post filters.</p>
+            </div>
+
+            <div>
+                <h3>Advance filtering.</h3>
+                <p>
+                    Easily create filters for all type of fields. Incorporate filters so candidates can show job posts
+                    for certain positions, locations, branches and other fields you like to filter.
+                </p>
+            </div>
+
+            <div>
+                <h3>Show individual job posts on your site</h3>
+                <p>
+                   Show individual job posts on your site or make the list link to your RM page.
+                </p>
             </div>
 
         </div>
@@ -373,8 +397,8 @@
     <div id="contact">
         <h2>Contact Bonsy</h2>
         <p>
-            <span>kristoffer[at]bonsy.no</span>
-            <span>+47 97156620</span>
+            E-mail us on kristoffer@bonsy.no <br>
+            Call us on: +47 97156620
         </p>
 
     </div>
