@@ -201,6 +201,10 @@
             border-bottom: 1px solid #eee;
         }
 
+        #contact {
+            border: none !important;
+        }
+
         #contact h2, #getStarted h2 {
             margin: 0 0 1rem 0;
         }
@@ -212,6 +216,11 @@
 
         #getStarted .buttons {
             justify-content: center;
+        }
+
+        #getStarted h3 {
+            margin: 2rem 0 1rem 0;
+            font-size: 1rem;
         }
 
         @media only screen and (max-width: 600px) {
@@ -428,26 +437,6 @@
         </div>
     </div>
 
-
-    <script>
-        document.getElementById('features').addEventListener('click', (event) => {
-
-            if (event.target.closest('button')) {
-                let div = event.target.closest('div').classList;
-                if (div.contains('expand')) {
-                    div.remove('expand');
-                    event.target.closest('button').textContent = 'More';
-                } else {
-                    div.add('expand');
-                    event.target.closest('button').textContent = 'Less';
-                }
-
-
-            }
-
-        })
-    </script>
-
     <div id="getStarted">
         <h2>How to get started</h2>
         <p>
@@ -459,14 +448,16 @@
             the plugin, and if you want to keep using the plugin after the 30 days, you can purchase a subscription.
         </p>
 
-        <p style="margin: 3em auto 0 auto">Example on how simple it is to display a job post title</p>
+        <h3>Code example</h3>
+
+        <p style="margin-bottom: 0">How to display a job post field:</p>
 
         <pre><code><i class="y">&lt;</i><i class="r">h1</i><i class="y">&gt;</i><i class="p">&lt;php</i> <i class="b">the_jobpost</i><i
                 class="y">(</i><i class="g">'title'</i><i
                 class="y">)</i>;<i class="p">?&gt;</i><i class="y">&lt;/</i><i
                 class="r">h1</i><i class="y">&gt;</i></code></pre>
 
-        <p style="margin-bottom: 0">Or to loop through all job posts</p>
+        <p style="margin-bottom: 0">How to list job posts:</p>
 
         <pre style="text-align: left"><code><i class="p">if</i><i class="y">(</i> <i class="b">have_jobposts</i><i
                 class="r">()</i> <i class="y">)</i> <i
@@ -483,21 +474,21 @@
 
 <i class="p">endif</i>;</code></pre>
 
-        <p>You can also use the plugin to insert job posts as WordPress posts</p>
+        <p><i>You can also use the plugin to insert job posts as WordPress posts</i></p>
 
         <div class="buttons">
+            <a href="/wp/bonsay-recman.zip">Download Plugin</a>
             <a href="https://bonsy.gitbook.io/bonsay-recman-wp/" target="_blank">Read documentation</a>
         </div>
     </div>
 
     <div id="contact">
         <h2>Contact</h2>
-        <p>For information about the plugin, pricing and subscription please contact us</p>
+        <p>For information about the plugin, pricing and subscription:</p>
         <p>
-            E-mail us on <br>kristoffer@bonsy.no <br><br>
-            Call us on <br>+47 97156620
+            Email us on <br><strong>kristoffer@bonsy.no</strong><br><br>
+            Call us on <br><strong>+47 97156620</strong>
         </p>
-
     </div>
 
 </main>
