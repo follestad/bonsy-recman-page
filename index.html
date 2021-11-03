@@ -41,9 +41,18 @@
 
         header > h2 {
             margin: 0;
-            font-size: 1.1em;
+            font-size: 1em;
             font-weight: 700;
+            display: block;
+            height: 2.5em;
+            width: 200px;
+            padding: 0;
+            background: url('/img/bonsy2_black.svg') no-repeat left center;
+            background-size: contain;
+            text-indent: -9999px;
+            z-index: 100;
         }
+
 
         header a {
             background-color: #e5e7eb;
@@ -78,7 +87,7 @@
         }
 
         #hero h1 {
-            font-size: 2.5em;
+            font-size: 2.4em;
             line-height: 1.2em;
             font-weight: 800;
             margin: 1.8rem 0;
@@ -89,7 +98,7 @@
         }
 
         #hero figure {
-            max-width: 50%;
+            max-width: 45%;
             background-color: #000;
             padding: 5px;
             border-radius: 10px;
@@ -162,7 +171,7 @@
             grid-template-columns: 1fr;
             grid-template-rows: auto 1fr;
             align-items: flex-start;
-            padding: 1.5rem 1rem;
+            padding: 1.5rem 1rem .5em;
             border: 1px solid rgba(0, 0, 0, .1);
             border-radius: 8px;
         }
@@ -176,7 +185,7 @@
 
         #features .grid p {
             display: block;
-            margin: 0;
+            margin: 0 0 1em 0;
             color: #656565;
             font-size: 0.875em;
         }
@@ -227,6 +236,75 @@
 
         }
 
+        .grid .expand {
+            grid-row: span 2;
+        }
+
+        .grid p.more {
+            display: none !important;
+        }
+
+        .grid .expand p.more {
+            display: block !important;
+        }
+
+        .grid button {
+            appearance: none !important;
+            background-color: transparent;
+            border: none !important;
+            text-align: left;
+            color: #6366f1;
+            padding: 0;
+            margin: 1em 0 1em 0;
+            outline: none;
+            cursor: pointer;
+        }
+
+        pre {
+            width: 80%;
+            margin: 1em auto 2em;
+            background-color: #272c35;
+            display: block;
+            padding: 1em;
+            border-radius: 10px;
+            color: #a3b2c2;
+            overflow: hidden;
+        }
+
+        code i {
+            font-style: normal !important;
+        }
+
+        code i.b { color: #41b0f5 }
+
+        code i.y { color: #f1b800 }
+
+        code i.g { color: #8cc570 }
+
+        code i.r { color: #ff6774 }
+
+        code i.p { color: #d374e3 }
+
+        code {
+            font-family: 'Menlo', monospace;
+            font-size: 0.875rem;
+        }
+
+
+        .code {
+            display: block;
+            margin: 0 auto;
+            background-color: #303136;
+            max-width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .code img {
+            width: 100%;
+            height: auto;
+        }
 
     </style>
 </head>
@@ -243,12 +321,14 @@
     <div id="hero">
 
         <div id="text">
-            <span>Very proud to introduce</span>
-            <h1>Bonsy RecMan WordPress Plugin</h1>
+            <span>Introducing the</span>
+            <h1>RecMan WordPress Plugin</h1>
             <p>
-                Save time and automatically publish job posts from RecMan to your company website. Incorporate your
-                design and brand and let the plugin and RecMan do the rest.
-                Fully automate the workflow and keep your website updated without additional tasks.
+                Save development time when integrating RecMan job posts. It lets you focus on the design, and the plugin
+                does the rest.
+            </p>
+            <p>
+                Fully automate the workflow and keep your website up to date without extra work.
             </p>
             <div class="buttons">
                 <a href="/wp/bonsay-recman.zip">Download</a>
@@ -265,125 +345,178 @@
 
     <div id="about">
 
+        <h2>What does the WordPress plugin do?</h2>
+
         <p>
-            Bonsy RecMan WordPress Plugin will automatically publish job posts from RecMan to your WordPress site.
-            All you have to do is to set up your design and define what you want to show. The plugin will make the
-            integration easy, safe and fast without any knowledge about RecMan API.
+            The plugin will simplify the integration process of making job posts from RecMan be
+            automatically published to your WordPress site. You only need to define which fields that you want to be
+            displayed. The plugin will make the integration easy, safe and fast without any knowledge about the RecMan
+            API.
         </p>
 
     </div>
 
     <div id="features">
 
-        <h2>Why use this Bonsy plugin for RecMan</h2>
+        <h2>Why use the plugin?</h2>
 
         <div class="grid">
 
             <div>
                 <h3>Automate your workflow</h3>
                 <p>
-                    Automatically show job posts from RecMan on your company site.
-                    No need to log into WordPress.
+                    Automatically display job posts from RecMan without any manual work.
                 </p>
             </div>
 
             <div>
                 <h3>Full control over design</h3>
                 <p>
-                    Implement your design/brand and select the fields you want to show. The plugin will handle
-                    all the technical implementation.
+                    Implement your design and select the fields you want to display. The plugin will handle the
+                    technical part.
                 </p>
             </div>
 
             <div>
                 <h3>Built-in caching</h3>
-                <p>Automatic caching will help you to not exceed RecMan API limits, as well as it keeps your site safe and fast.</p>
+                <p>
+                    Automatic caching will help you to not exceed RecMan API limits, as well as it keeps your site safe
+                    and fast.
+                </p>
             </div>
 
             <div>
                 <h3>SEO friendly</h3>
                 <p>
-                    Get SEO friendly URL's and metadata/tags for search engines and social media sharing.
+                    Will automatically use SEO friendly URLs and metadata for search engines and social media sharing.
                 </p>
             </div>
 
             <div>
                 <h3>Backwards compatible</h3>
                 <p>
-                    Don't worry about keeping your code updated. The plugin is backwards compatible with the RecMan API, so changes in the API will not break the site.</p>
+                    Don't worry about keeping your code updated with API changes. The plugin is backward compatible with
+                    the RecMan API, so changes in the API will not break the site.
+                </p>
             </div>
 
             <div>
-                <h3>Keep plugin updated through WordPress</h3>
-                <p>New updates to the plugin will be available through WordPress plugin updates.</p>
-            </div>
-
-            <div>
-                <h3>Support multiple languages</h3>
+                <h3>Keep the plugin updated via WordPress</h3>
                 <p>
-                    Automatic translation based on selected language. Some RecMan API fields must be translated to make
-                    them readable. Currently, supports Norwegian, English and Swedish. Additional languages can be added on request.
+                    New updates to the plugin will be available through the native WordPress plugin updater.
+                </p>
+            </div>
+
+            <div>
+                <h3>Multi-language support</h3>
+                <p>
+                    Some RecMan API fields requires translation to make them readable. The plugin includes automatic
+                    translation in Norwegian, English and Swedish. Additional languages can be added on request.
                 </p>
             </div>
 
             <div>
                 <h3>Cleaner HTML code</h3>
                 <p>
-                    The plugin will output a cleaner HTML for job posts, so it is easier to incorporate your
-                    design.
+                    The plugin will output a cleaner HTML for job posts, so it is easier to incorporate your design than
+                    the original received HTML code.
                 </p>
             </div>
 
             <div>
                 <h3>Filter by department</h3>
-                <p>Want to only show job post from certain departments or corporations in RecMan?
-                    The plugin has built-in features for filtering job posts.
+                <p>
+                    Want to only show job post from certain departments or corporations? The plugin has built-in
+                    features for filtering job posts.
                 </p>
             </div>
 
             <div>
-                <h3>Supports free text search</h3>
-                <p>
-                    Use the built-in search function to let visitors search through job posts.</p>
-            </div>
-
-            <div>
-                <h3>User filter</h3>
-                <p>Incorporate filters so candidates can show job posts for certain positions, locations and other
-                    fields you like to filter.</p>
-            </div>
-
-            <div>
-                <h3>Many helper functions</h3>
-                <p>Built-in helper functions to show job post and position counts, excerpt text and job post filters.</p>
-            </div>
-
-            <div>
-                <h3>Advance filtering.</h3>
+                <h3>Advanced filtering</h3>
                 <p>
                     Easily create filters for all type of fields. Incorporate filters so candidates can show job posts
-                    for certain positions, locations, branches and other fields you like to filter.
+                    for certain positions, locations, branches and other fields you like to filter. Incorporate filters
+                    so visitors can filter job posts for certain positions, locations and other
+                    fields.
                 </p>
             </div>
 
             <div>
-                <h3>Show individual job posts on your site</h3>
+                <h3>Helper functions</h3>
                 <p>
-                   Show individual job posts on your site or make the list link to your RM page.
+                    Built-in helper functions to show job post and position counts, excerpts, advanced filtering for users
+                    and support for freetext search.
+                </p>
+            </div>
+
+            <div>
+                <h3>Display individual job posts on your site</h3>
+                <p>
+                    Display the content of individual job posts on your site, or make the list link directly to the
+                    RecMan page.
                 </p>
             </div>
 
         </div>
     </div>
 
+
+    <script>
+        document.getElementById('features').addEventListener('click', (event) => {
+
+            if (event.target.closest('button')) {
+                let div = event.target.closest('div').classList;
+                if (div.contains('expand')) {
+                    div.remove('expand');
+                    event.target.closest('button').textContent = 'More';
+                } else {
+                    div.add('expand');
+                    event.target.closest('button').textContent = 'Less';
+                }
+
+
+            }
+
+        })
+    </script>
+
     <div id="getStarted">
-        <h2>Get Started</h2>
-        <p>To get started just download the plugin and upload it to WordPress. When you activate the plugin a RecMan icon
-            will appear in the admin menu. From here you only need to register using your RecMan API key.</p>
+        <h2>How to get started</h2>
         <p>
-            When you register with the API key a Bonsy account with free trial will start. From here you got 30 days to
-            test and get things running before you need to subscribe to keep using the service.
+            Get started by downloading the plugin and upload it to WordPress. When you activate the plugin a RecMan icon
+            will appear in the admin menu. From here you only need to add a RecMan API key.
         </p>
+        <p>
+            When you register with the Recman API key a free 30 day trial will start. This gives you time to evaluate
+            the plugin, and if you want to keep using the plugin after the 30 days, you can purchase a subscription.
+        </p>
+
+        <p style="margin: 3em auto 0 auto">Example on how simple it is to display a job post title</p>
+
+        <pre><code><i class="y">&lt;</i><i class="r">h1</i><i class="y">&gt;</i><i class="p">&lt;php</i> <i class="b">the_jobpost</i><i
+                class="y">(</i><i class="g">'title'</i><i
+                class="y">)</i>;<i class="p">?&gt;</i><i class="y">&lt;/</i><i
+                class="r">h1</i><i class="y">&gt;</i></code></pre>
+
+        <p style="margin-bottom: 0">Or to loop through all job posts</p>
+
+        <pre style="text-align: left"><code><i class="p">if</i><i class="y">(</i> <i class="b">have_jobposts</i><i
+                class="r">()</i> <i class="y">)</i> <i
+                class="b">:</i> <i class="p">while</i><i class="r">(</i> <i class="b">have_jobposts()</i> <i
+                class="r">)</i> <i class="b">: the_jobpost()</i>;
+
+    <i class="b">echo</i> <i class="g">'</i><i class="y">&lt;</i><i class="r">h1</i><i class="y">&gt;</i><i
+                    class="g">'</i> <i class="b">. get_jobpost(</i><i class="g">'title'</i><i class="b">) .</i> <i
+                    class="g">'</i><i class="y">&lt;/</i><i class="r">h1</i><i class="y">&gt;</i><i class="g">'</i>;
+
+<i class="p">endwhile</i>; <i class="p">else</i> <i class="b">:</i>
+
+    <i class="b">echo</i> <i class="g">'No job posts available'</i>;
+
+<i class="p">endif</i>;</code></pre>
+
+        <p>You can also use the plugin to insert job posts as WordPress posts</p>
+
         <div class="buttons">
             <a href="">Read documentation</a>
         </div>
@@ -395,10 +528,10 @@
     </div>
 
     <div id="contact">
-        <h2>Contact Bonsy</h2>
+        <h2>Contact</h2>
         <p>
-            E-mail us on kristoffer@bonsy.no <br>
-            Call us on: +47 97156620
+            E-mail us on <br>kristoffer@bonsy.no <br><br>
+            Call us on <br>+47 97156620
         </p>
 
     </div>
