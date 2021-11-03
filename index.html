@@ -141,15 +141,20 @@
         #about {
             text-align: center;
             border-bottom: 1px solid #eee;
+            padding: 4em 0;
+        }
+
+        #about h2 {
+            margin: 0;
         }
 
         #about p {
             max-width: 80%;
-            margin: 2.5em auto;
+            margin: 1em auto;
         }
 
         #features {
-            padding: 2.5em 1em;
+            padding: 4em 1em;
             border-bottom: 1px solid #eee;
         }
 
@@ -163,15 +168,16 @@
             padding: 0 1em;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 1em;
+            grid-gap: 1.5em;
         }
 
         #features .grid > div {
+            background-color: #fbfbfb;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: auto 1fr;
             align-items: flex-start;
-            padding: 1.5rem 1rem .5em;
+            padding: 1rem 1rem .5em;
             border: 1px solid rgba(0, 0, 0, .1);
             border-radius: 8px;
         }
@@ -190,13 +196,17 @@
             font-size: 0.875em;
         }
 
-        #pricing, #contact, #getStarted {
-            padding: 2.5em 1em;
+        #contact, #getStarted {
+            padding: 4em 1em;
             text-align: center;
             border-bottom: 1px solid #eee;
         }
 
-        #pricing p, #contact p, #getStarted p {
+        #contact h2, #getStarted h2 {
+            margin: 0 0 1rem 0;
+        }
+
+        #contact p, #getStarted p {
             color: #656565;
             max-width: 80%;
             margin: 0 auto 1em;
@@ -236,30 +246,6 @@
 
         }
 
-        .grid .expand {
-            grid-row: span 2;
-        }
-
-        .grid p.more {
-            display: none !important;
-        }
-
-        .grid .expand p.more {
-            display: block !important;
-        }
-
-        .grid button {
-            appearance: none !important;
-            background-color: transparent;
-            border: none !important;
-            text-align: left;
-            color: #6366f1;
-            padding: 0;
-            margin: 1em 0 1em 0;
-            outline: none;
-            cursor: pointer;
-        }
-
         pre {
             width: 80%;
             margin: 1em auto 2em;
@@ -290,21 +276,6 @@
             font-size: 0.875rem;
         }
 
-
-        .code {
-            display: block;
-            margin: 0 auto;
-            background-color: #303136;
-            max-width: 80%;
-            padding: 10px;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .code img {
-            width: 100%;
-            height: auto;
-        }
 
     </style>
 </head>
@@ -522,13 +493,9 @@
         </div>
     </div>
 
-    <div id="pricing">
-        <h2>Pricing</h2>
-        <p>For information regarding pricing and subscription please contact Bonsy.</p>
-    </div>
-
     <div id="contact">
         <h2>Contact</h2>
+        <p>For information about the plugin, pricing and subscription please contact us</p>
         <p>
             E-mail us on <br>kristoffer@bonsy.no <br><br>
             Call us on <br>+47 97156620
