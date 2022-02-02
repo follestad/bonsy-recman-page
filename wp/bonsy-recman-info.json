@@ -1,20 +1,20 @@
 {
   "name": "Bonsy RecMan WP Plugin",
   "slug": "bonsay-recman",
-  "version": "2.0.8",
+  "version": "2.1.3",
   "download_link": "https://recman.bonsy.no/wp/bonsay-recman.zip",
   "trunk": "https://recman.bonsy.no/wp/bonsay-recman.zip",
   "requires_php": "7.4",
   "requires": "5.6",
   "tested": "5.8.2",
-  "last_updated": "2022-01-10 13:15:00",
+  "last_updated": "2022-02-02 23:15:00",
   "upgrade_notice": "Plugin update is available.",
   "author": "<a href='https://recman.bonsy.no'>Kristoffer Follestad</a>",
   "author_profile": "https://profiles.wordpress.org/bonsay",
   "author_homepage": "https://recman.bonsy.no",
   "sections": {
     "description": "Integrate RecMan job posts to WordPress",
-    "changelog": "<h4>2.0.8 - January 10, 2022</h4><ul><li>Fixed bug with fetching new data after reset. Made sure site doesn't fetch data on every load if failing to fetch from server</li></ul>"
+    "changelog": "<h4>2.1.3 - February 2, 2022</h4><ul><li>Improved stability of plugin if server is unavailable</li></ul>"
   },
   "banners": {
     "low": "https://recman.bonsy.no/wp/bonsy_banner_low.png",
