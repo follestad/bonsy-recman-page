@@ -1,7 +1,7 @@
 {
   "name": "Bonsy RecMan WP Plugin",
   "slug": "bonsay-recman",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "download_link": "https://recman.bonsy.no/wp/bonsay-recman.zip",
   "trunk": "https://recman.bonsy.no/wp/bonsay-recman.zip",
   "requires_php": "7.4",
@@ -14,7 +14,7 @@
   "author_homepage": "https://recman.bonsy.no",
   "sections": {
     "description": "Integrate RecMan job posts to WordPress",
-    "changelog": "<h4>2.1.4 - February 3, 2022</h4><ul><li>Improved stability of plugin if server is unavailable</li></ul>"
+    "changelog": "<h4>2.1.5 - February 10, 2022</h4><ul><li>Fixed bug where error was thrown if neither token or demo mode was set</li></ul>"
   },
   "banners": {
     "low": "https://recman.bonsy.no/wp/bonsy_banner_low.png",
