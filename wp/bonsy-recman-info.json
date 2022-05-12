@@ -1,20 +1,20 @@
 {
   "name": "Bonsy RecMan WP Plugin",
   "slug": "bonsay-recman",
-  "version": "2.1.7",
+  "version": "2.1.8",
   "download_link": "https://recman.bonsy.no/wp/bonsay-recman.zip",
   "trunk": "https://recman.bonsy.no/wp/bonsay-recman.zip",
   "requires_php": "7.4",
   "requires": "5.6",
   "tested": "5.8.2",
-  "last_updated": "2022-03-29 11:55:00",
+  "last_updated": "2022-05-12 12:01:00",
   "upgrade_notice": "Plugin update is available.",
   "author": "<a href='https://recman.bonsy.no'>Kristoffer Follestad</a>",
   "author_profile": "https://profiles.wordpress.org/bonsay",
   "author_homepage": "https://recman.bonsy.no",
   "sections": {
     "description": "Integrate RecMan job posts to WordPress",
-    "changelog": "<h4>2.1.7 - March 29, 2022</h4><ul><li>Removed the trigger of fatal error if job post doesn't exist and was not able to redirect browser.</li></ul>"
+    "changelog": "<h4>2.1.8 - May 12, 2022</h4><ul><li>Fixed issue with free text search field not working properly</li></ul>"
   },
   "banners": {
     "low": "https://recman.bonsy.no/wp/bonsy_banner_low.png",

@@ -138,6 +138,11 @@
             color: #fff;
         }
 
+        .buttons a:hover {
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+            transform: translateY(-1px);
+        }
+
         #about {
             text-align: center;
             border-bottom: 1px solid #eee;
@@ -222,6 +227,19 @@
             margin: 2rem 0 1rem 0;
             font-size: 1rem;
         }
+
+        .buttonWithTag {
+            text-align: center;
+        }
+
+        .buttonWithTag > span {
+            display: block;
+            font-size: 0.75em !important;
+            opacity: 0.8 !important;
+            color: inherit !important;
+            font-weight: 300 !important;
+        }
+
 
         @media only screen and (max-width: 600px) {
             #hero {
@@ -310,13 +328,13 @@
                 Fully automate the workflow and keep your website up to date without extra work.
             </p>
             <div class="buttons">
-                <a href="/wp/bonsay-recman.zip">Download v2.1.7</a>
-                <a href="https://bonsy.gitbook.io/bonsay-recman-wp/" target="_blank">Read documentation</a>
+                <a href="/wp/bonsay-recman.zip" class="buttonWithTag">Download v2.1.8 <span>30 day free trial</span></a>
+                <a href="https://bonsy.gitbook.io/bonsay-recman-wp/" target="_blank" class="buttonWithTag">Read documentation <span>Get started</span></a>
             </div>
         </div>
 
         <figure>
-            <img src="/img/bonsy-recman-wp-admin-2.png" alt="Bonsy Recman WordPress Admin"/>
+            <img src="img/bonsy-recman-wp-admin-2.png" alt="Bonsy Recman WordPress Admin"/>
         </figure>
 
     </div>
