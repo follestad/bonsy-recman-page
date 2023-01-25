@@ -14,7 +14,7 @@
   "author_homepage": "https://recman.bonsy.no",
   "sections": {
     "description": "Auto-publish RecMan job posts to WordPress",
-    "changelog": "<h4>2.3.0 - December , 2022</h4><ul><li>Option to sort jobs by created, updated or startDate</li></ul>"
+    "changelog": "<h4>Wed 25 Jan</h4><ul><li>Added support for department in filtered list</li><li>Count for filtered list will adjust according to filtered list</li></ul><h4>2.3.0 - December , 2022</h4><ul><li>Option to sort jobs by created, updated or startDate</li></ul>"
   },
   "banners": {
     "low": "https://recman.bonsy.no/wp/bonsy_banner_low.png",
