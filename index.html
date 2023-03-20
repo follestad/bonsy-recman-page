@@ -10,7 +10,7 @@
         html {
             font-family: -apple-system, 'Roboto', 'Arial', sans-serif;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 17px;
             line-height: 1.55;
             box-sizing: border-box;
         }
@@ -19,17 +19,21 @@
             box-sizing: border-box;
         }
 
-        p {
-            color: #656565;
-        }
-
         body {
             margin: 0;
             padding: 0;
+            background-color: #0b1120;
+            color: #94a2b8;
+            background-image: url(img/bg.jpg);
+            background-repeat: no-repeat;
+        }
+
+        h1, h2, h3 {
+            color: #fff;
         }
 
         main {
-            max-width: 960px;
+            /*max-width: 960px;*/
             margin: 0 auto 5em;
         }
 
@@ -38,8 +42,7 @@
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            padding: 1em;
-            border-bottom: 1px solid #eee;
+            padding: 2em;
             margin-bottom: 2em;
         }
 
@@ -51,7 +54,7 @@
             height: 2.5em;
             width: 200px;
             padding: 0;
-            background: url('/img/bonsy2_black.svg') no-repeat left center;
+            background: url('img/bonsy2_black.svg') no-repeat left center;
             background-size: contain;
             text-indent: -9999px;
             z-index: 100;
@@ -59,8 +62,8 @@
 
 
         header a {
-            background-color: #e5e7eb;
-            color: #6b7280;
+        / / background-color: #334155;
+            color: #fff;
             display: inline-block;
             width: auto;
             padding: 0.5em 1em;
@@ -76,28 +79,38 @@
             justify-content: center;
             align-items: center;
             padding: 1em;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #282e3f;
+            text-align: center;
         }
 
         #hero #text {
             display: block;
             padding: 1em 3em 1em 0;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         #hero span {
-            font-size: 1.1em;
-            color: #6366f1;
+            font-size: 1.3em;
+            color: #0ba5e9;
             font-weight: 600;
         }
 
         #hero h1 {
-            font-size: 2.4em;
+            font-size: 3.4em;
             line-height: 1.2em;
             font-weight: 800;
             margin: 1.8rem 0;
         }
 
-        #hero figure {
+        #hero p {
+            font-size: 1.1em;
+            max-width: 65ch;
+            margin: 0 auto 1em;
+        }
+
+
+        #about figure {
             max-width: 45%;
             background-color: #000;
             padding: 8px;
@@ -106,7 +119,7 @@
             box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
         }
 
-        #hero figure img {
+        #about figure img {
             width: 100%;
             height: auto;
             object-fit: cover;
@@ -114,57 +127,69 @@
         }
 
         .buttons {
-            margin: 2rem 0;
+            margin: 4rem 0;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
+            gap: 2rem;
             align-items: center;
         }
 
         .buttons a {
-            background-color: #e5e7eb;
-            color: #6b7280;
+            background-color: #334155;
+            color: #fff;
             display: inline-block;
             width: auto;
             padding: 0.8em 1em;
             border-radius: 8px;
             margin-right: 1em;
             font-weight: 600;
-            font-size: .9em;
+            font-size: 1em;
             text-decoration: none;
         }
 
         .buttons a:first-child {
-            background-color: #6366f1;
+            background-color: #4338ca;
             color: #fff;
         }
 
         .buttons a:hover {
-            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
             transform: translateY(-1px);
         }
 
         #about {
-            text-align: center;
-            border-bottom: 1px solid #eee;
+            text-align: left;
+            border-bottom: 1px solid #282e3f;
             padding: 4em 0;
+            margin: 0 -20px;
+        }
+
+        #about > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
         }
 
         #about h2 {
+            font-size: 2em;
             margin: 0;
         }
 
         #about p {
-            max-width: 80%;
             margin: 1em auto;
         }
 
         #features {
             padding: 4em 1em;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #282e3f;
         }
+
 
         #features h2 {
             margin: 0 0 1em 0;
+            font-size: 2em;
             text-align: center;
         }
 
@@ -172,38 +197,45 @@
             border-radius: 20px;
             padding: 0 1em;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 1.5em;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2.2em;
+            max-width: 960px;
+            margin: 0 auto;
         }
 
         #features .grid > div {
-            background-color: #fbfbfb;
+            background-color: #1e293b;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: auto 1fr;
             align-items: flex-start;
-            padding: 1rem 1rem .5em;
-            border: 1px solid rgba(0, 0, 0, .1);
+            padding: 1.8rem;
             border-radius: 8px;
+            box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, .05);
         }
 
         #features .grid h3 {
             display: block;
             margin: 0 0 .5rem;
-            font-size: 1rem;
-            color: #333;
+            font-size: 1.2rem;
+            color: #dbe3ec;
         }
 
         #features .grid p {
             display: block;
             margin: 0 0 1em 0;
-            font-size: 0.875em;
+            color: #bac2d0;
         }
 
         #contact, #getStarted {
             padding: 4em 1em;
             text-align: center;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #282e3f;
+        }
+
+        #getStarted > div {
+            max-width: 960px;
+            margin: 0 auto;
         }
 
         #contact {
@@ -211,6 +243,7 @@
         }
 
         #contact h2, #getStarted h2 {
+            font-size: 2em;
             margin: 0 0 1rem 0;
         }
 
@@ -274,7 +307,8 @@
         pre {
             width: 80%;
             margin: 1em auto 2em;
-            background-color: #272c35;
+            background-color: #0f1527;
+            border: 1px solid #292d3d;
             display: block;
             padding: 1em;
             border-radius: 10px;
@@ -307,8 +341,10 @@
 
     <script async src="https://cdn.panelbear.com/analytics.js?site=7OFWRjZ6BZx"></script>
     <script>
-        window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
-        panelbear('config', { site: '7OFWRjZ6BZx' });
+        window.panelbear = window.panelbear || function () {
+            (window.panelbear.q = window.panelbear.q || []).push(arguments);
+        };
+        panelbear('config', {site: '7OFWRjZ6BZx'});
     </script>
 
 </head>
@@ -325,137 +361,142 @@
     <div id="hero">
 
         <div id="text">
-            <span>Introducing the</span>
+            <span>Presenting the</span>
             <h1>RecMan WordPress Plugin</h1>
             <p>
-                Save development time when integrating RecMan job posts. It lets you focus on the design, and the plugin
-                does the rest.
+                Simplify the integration of RecMan job posts on your WordPress site with our easy-to-use plugin. Focus
+                on your design while the plugin takes care of the rest.
             </p>
             <p>
-                Fully automate the workflow and keep your website up to date without extra work.
+                Streamline your workflow and keep your website up-to-date effortlessly with full automation.
             </p>
             <div class="buttons">
-                <a href="/wp/bonsay-recman.zip" class="buttonWithTag">Download v2.4.2 <span>30 day free trial</span></a>
-                <a href="https://bonsy.gitbook.io/bonsay-recman-wp/" target="_blank" class="buttonWithTag">Read documentation <span>Get started</span></a>
+                <a href="/wp/bonsay-recman.zip" class="buttonWithTag">Download v2.4.2 <span>30-day free trial</span></a>
+                <a href="https://bonsy.gitbook.io/bonsay-recman-wp/" target="_blank" class="buttonWithTag">Read
+                    documentation <span>Get started</span></a>
             </div>
         </div>
 
-        <figure>
-            <img src="img/bonsy-recman-wp-admin-2.png" alt="Bonsy Recman WordPress Admin"/>
-        </figure>
-
     </div>
-
 
     <div id="about">
+        <div>
+            <div>
+                <h2>Easily Publish RecMan Job Posts on Your WordPress Site</h2>
 
-        <h2>What does the WordPress plugin do?</h2>
-
-        <p>
-            The plugin will simplify the integration process of making job posts from RecMan be
-            automatically published to your WordPress site. You only need to define which fields that you want to be
-            displayed. The plugin will make the integration easy, safe and fast without any knowledge about the RecMan
-            API.
-        </p>
-
+                <p>
+                    The plugin simplifies integration. Job posts from RecMan are automatically published on your
+                    WordPress
+                    site.
+                    Define the fields to display and customize the design to match your preferences.
+                </p>
+                <p>Enjoy a seamless, secure,
+                    and fast experience. No RecMan API knowledge needed.
+                </p>
+            </div>
+            <figure>
+                <img src="img/bonsy-recman-wp-admin-2.png" alt="Bonsy Recman WordPress Admin"/>
+            </figure>
+        </div>
     </div>
+
 
     <div id="features">
 
-        <h2>Why use the plugin?</h2>
+        <h2>Discover the Benefits of the Plugin</h2>
 
         <div class="grid">
 
             <div>
-                <h3>Automate your workflow</h3>
+                <h3>Streamline Your Workflow</h3>
                 <p>
-                    Automatically display job posts from RecMan without any manual work.
+                    Effortlessly showcase RecMan job posts with full automation.
                 </p>
             </div>
 
             <div>
-                <h3>Full control over design</h3>
+                <h3>Complete Design Control</h3>
                 <p>
-                    Implement your design and select the fields you want to display. The plugin will handle the
-                    technical part.
+                    Customize your design and choose the fields to display. Let the plugin manage the technical aspects.
                 </p>
             </div>
 
             <div>
-                <h3>Built-in caching</h3>
+                <h3>Integrated Caching</h3>
                 <p>
-                    Automatic caching will help you to not exceed RecMan API limits, as well as it keeps your site safe
-                    and fast.
+                    Automatic caching prevents exceeding RecMan API limits while maintaining your site's security and
+                    speed.
                 </p>
             </div>
 
             <div>
-                <h3>SEO friendly</h3>
+                <h3>SEO Optimized</h3>
                 <p>
-                    Will automatically use SEO friendly URLs and metadata for search engines and social media sharing.
+                    Generates SEO-friendly URLs and metadata for enhanced search engine performance and social media
+                    sharing.
                 </p>
             </div>
 
             <div>
-                <h3>Backwards compatible</h3>
+                <h3>Backward Compatibility</h3>
                 <p>
-                    Don't worry about keeping your code updated with API changes. The plugin is backward compatible with
-                    the RecMan API, so changes in the API will not break the site.
+                    Stay worry-free about API updates. The plugin ensures backward compatibility with the RecMan API,
+                    preventing site disruptions due to API changes.
                 </p>
             </div>
 
             <div>
-                <h3>Keep the plugin updated via WordPress</h3>
+                <h3>Effortless WordPress Updates</h3>
                 <p>
-                    New updates to the plugin will be available through the native WordPress plugin updater.
+                    Receive plugin updates seamlessly via the native WordPress plugin updater.
                 </p>
             </div>
 
             <div>
-                <h3>Multi-language support</h3>
+                <h3>Multi-Language Support</h3>
                 <p>
-                    Some RecMan API fields requires translation to make them readable. The plugin includes automatic
-                    translation in Norwegian, English and Swedish. Additional languages can be added on request.
+                    The plugin automatically translates certain RecMan API fields for readability, with built-in support
+                    for Norwegian, English, and Swedish. Additional languages can be added upon request.
                 </p>
             </div>
 
             <div>
-                <h3>Cleaner HTML code</h3>
+                <h3>Clean HTML Output</h3>
                 <p>
-                    The plugin will output a cleaner HTML for job posts, so it is easier to incorporate your design than
-                    the original received HTML code.
+                    The plugin generates clean and structured HTML for job posts, making it easier to integrate your
+                    design compared to the original HTML code.
                 </p>
             </div>
 
             <div>
-                <h3>Filter by department</h3>
+                <h3>Department-Based Filtering</h3>
                 <p>
-                    Want to only show job post from certain departments or corporations? The plugin has built-in
-                    features for filtering job posts.
+                    Display job posts from specific departments or corporations using the plugin's built-in filtering
+                    capabilities.
                 </p>
             </div>
 
             <div>
-                <h3>Advanced filtering</h3>
+                <h3>Flexible Filtering Options</h3>
                 <p>
-                    Easily create filters for all type of fields. Incorporate filters so candidates can show job posts
-                    for certain positions, locations, branches and other fields you like to filter.
+                    Create custom filters for various fields, allowing candidates to view job posts based on positions,
+                    locations, branches, and other criteria you choose.
                 </p>
             </div>
 
             <div>
-                <h3>Helper functions</h3>
+                <h3>Helpful Built-in Functions</h3>
                 <p>
-                    Built-in helper functions to show job post and position counts, excerpts, advanced filtering for users
-                    and support for freetext search.
+                    Utilize built-in functions for displaying job post and position counts, excerpts, advanced user
+                    filtering, and support for free-text search.
                 </p>
             </div>
 
             <div>
-                <h3>Display individual job posts on your site</h3>
+                <h3>Showcase Individual Job Posts</h3>
                 <p>
-                    Display the content of individual job posts on your site, or make the list link directly to the
-                    RecMan page.
+                    Feature individual job posts on your site or link the list directly to the RecMan page for easy
+                    navigation.
                 </p>
             </div>
 
@@ -463,35 +504,39 @@
     </div>
 
     <div id="getStarted">
-        <h2>How to get started</h2>
-        <p>
-            Get started by downloading the plugin and upload it to WordPress. When you activate the plugin a RecMan icon
-            will appear in the admin menu. From here you only need to add a RecMan API key.
-        </p>
-        <p>
-            When you register with the Recman API key a free 30 day trial will start. This gives you time to evaluate
-            the plugin, and if you want to keep using the plugin after the 30 days, you can purchase a subscription.
-        </p>
+        <div>
+            <h2>Getting Started</h2>
+            <p>
+                Begin by downloading the plugin and uploading it to WordPress. Once activated, a RecMan icon will appear
+                in
+                the admin menu. Simply add your RecMan API key to get started.
+            </p>
+            <p>
+                Registering with the RecMan API key initiates a free 30-day trial, allowing you to evaluate the plugin.
+                If
+                you wish to continue using the plugin after the trial period, purchase a subscription.
+            </p>
 
-        <h3>Code example</h3>
+            <h3>Code example</h3>
 
-        <p style="margin-bottom: 0">How to display a job post field:</p>
+            <p style="margin-bottom: 0">How to display a job post field:</p>
 
-        <pre><code><i class="y">&lt;</i><i class="r">h1</i><i class="y">&gt;</i><i class="p">&lt;php</i> <i class="b">the_jobpost</i><i
-                class="y">(</i><i class="g">'title'</i><i
-                class="y">)</i>;<i class="p">?&gt;</i><i class="y">&lt;/</i><i
-                class="r">h1</i><i class="y">&gt;</i></code></pre>
+            <pre><code><i class="y">&lt;</i><i class="r">h1</i><i class="y">&gt;</i><i class="p">&lt;php</i> <i
+                    class="b">the_jobpost</i><i
+                    class="y">(</i><i class="g">'title'</i><i
+                    class="y">)</i>;<i class="p">?&gt;</i><i class="y">&lt;/</i><i
+                    class="r">h1</i><i class="y">&gt;</i></code></pre>
 
-        <p style="margin-bottom: 0">How to list job posts:</p>
+            <p style="margin-bottom: 0">How to list job posts:</p>
 
-        <pre style="text-align: left"><code><i class="p">if</i><i class="y">(</i> <i class="b">have_jobposts</i><i
-                class="r">()</i> <i class="y">)</i> <i
-                class="b">:</i> <i class="p">while</i><i class="r">(</i> <i class="b">have_jobposts()</i> <i
-                class="r">)</i> <i class="b">: the_jobpost()</i>;
+            <pre style="text-align: left"><code><i class="p">if</i><i class="y">(</i> <i class="b">have_jobposts</i><i
+                    class="r">()</i> <i class="y">)</i> <i
+                    class="b">:</i> <i class="p">while</i><i class="r">(</i> <i class="b">have_jobposts()</i> <i
+                    class="r">)</i> <i class="b">: the_jobpost()</i>;
 
     <i class="b">echo</i> <i class="g">'</i><i class="y">&lt;</i><i class="r">h2</i><i class="y">&gt;</i><i
-                    class="g">'</i> <i class="b">. get_jobpost(</i><i class="g">'title'</i><i class="b">) .</i> <i
-                    class="g">'</i><i class="y">&lt;/</i><i class="r">h2</i><i class="y">&gt;</i><i class="g">'</i>;
+                        class="g">'</i> <i class="b">. get_jobpost(</i><i class="g">'title'</i><i class="b">) .</i> <i
+                        class="g">'</i><i class="y">&lt;/</i><i class="r">h2</i><i class="y">&gt;</i><i class="g">'</i>;
 
 <i class="p">endwhile</i>; <i class="p">else</i> <i class="b">:</i>
 
@@ -499,11 +544,16 @@
 
 <i class="p">endif</i>;</code></pre>
 
-        <p><i>You can also use the plugin to insert job posts as WordPress posts</i></p>
+            <p><i>You can also use the plugin to insert job posts as WordPress posts</i></p>
 
-        <div class="buttons">
-            <a href="/wp/bonsay-recman.zip">Download Plugin</a>
-            <a href="https://bonsy.gitbook.io/bonsay-recman-wp/" target="_blank">Read documentation</a>
+            <h3>Built in shortcode</h3>
+            <p>There is also a built-in shortcode you can use to display the job post feed. With a simple template engine and a option to add custom CSS.</p>
+            <pre><code><i class="r">[job_post_feed]</i></code></pre>
+
+            <div class="buttons">
+                <a href="/wp/bonsay-recman.zip">Download Plugin</a>
+                <a href="https://bonsy.gitbook.io/bonsay-recman-wp/" target="_blank">Read documentation</a>
+            </div>
         </div>
     </div>
 
