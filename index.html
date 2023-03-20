@@ -115,6 +115,10 @@
             padding: 2rem 1rem 6rem;
             border-bottom: 1px solid #282e3f;
             text-align: center;
+            background-image: url(img/bg2.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         #hero #text {
@@ -133,6 +137,7 @@
             font-size: clamp(2.4rem, 7vw, 5rem);
             line-height: 1.2em;
             margin: 1.8rem 0;
+            filter: drop-shadow(2px 2px 0px black);
         }
 
         #hero p {
@@ -237,7 +242,7 @@
             border-radius: 20px;
             padding: 0 1em;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             grid-gap: 2.2em;
             max-width: 960px;
             margin: 0 auto;
