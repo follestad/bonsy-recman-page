@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bonsy RecMan WordPress Plugin</title>
+    <title>RecMan WordPress Plugin | Simplify & Automate Job Post Integration</title>
+    <meta name="description"
+          content="Effortlessly integrate RecMan job posts on your WordPress site with our feature-rich plugin. Streamline your workflow, customize design, and enhance SEO.">
+    <meta property="og:title" content="RecMan WordPress Plugin | Simplify & Automate Job Post Integration">
+    <meta property="og:description"
+          content="Effortlessly integrate RecMan job posts on your WordPress site with our feature-rich plugin. Streamline your workflow, customize design, and enhance SEO.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://recman.bonsy.no/">
+    <meta property="og:image" content="https://recman.bonsy.no/img/bonsy-recman-wp-admin-2.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RecMan WordPress Plugin | Simplify & Automate Job Post Integration">
+    <meta name="twitter:description"
+          content="Effortlessly integrate RecMan job posts on your WordPress site with our feature-rich plugin. Streamline your workflow, customize design, and enhance SEO.">
+    <meta name="twitter:image" content="https://recman.bonsy.no/img/bonsy-recman-wp-admin-2.png">
+
     <style>
 
         html {
@@ -339,6 +352,12 @@
 
     </style>
 
+    <script async src="https://rum.cronitor.io/script.js"></script>
+    <script>
+        window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+        cronitor('config', { clientKey: '89649d041d3e3f10ca1a34230b29f17e' });
+    </script>
+
     <script async src="https://cdn.panelbear.com/analytics.js?site=7OFWRjZ6BZx"></script>
     <script>
         window.panelbear = window.panelbear || function () {
@@ -359,25 +378,35 @@
 
 
     <div id="hero">
-
         <div id="text">
-            <span>Presenting the Bonsy</span>
-            <h1>RecMan WordPress Plugin</h1>
-            <p>
+        <span itemprop="provider" itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop="name" content="Bonsy">
+            Presenting the Bonsy
+        </span>
+            <h1 itemprop="name">RecMan WordPress Plugin</h1>
+            <p itemprop="description">
                 Simplify the integration of RecMan job posts on your WordPress site with our easy-to-use plugin. Focus
                 on your design while the plugin takes care of the rest.
             </p>
             <p>
                 Streamline your workflow and keep your website up-to-date effortlessly with full automation.
             </p>
-            <div class="buttons">
-                <a href="/wp/bonsay-recman.zip" class="buttonWithTag">Download v2.4.2 <span>30-day free trial</span></a>
-                <a href="https://bonsy.gitbook.io/bonsay-recman-wp/" target="_blank" class="buttonWithTag">Read
-                    documentation <span>Get started</span></a>
+            <div class="buttons" role="navigation">
+                <a href="/wp/bonsay-recman.zip" class="buttonWithTag" itemprop="offers" itemscope
+                   itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="0">
+                    <meta itemprop="priceCurrency" content="NOK">
+                    <meta itemprop="availability" content="http://schema.org/InStock">
+                    Download v2.4.2 <span>30-day free trial</span>
+                </a>
+                <a href="https://bonsy.gitbook.io/bonsay-recman-wp/" target="_blank" class="buttonWithTag"
+                   aria-label="Read documentation">
+                    Read documentation <span>Get started</span>
+                </a>
             </div>
         </div>
-
     </div>
+
 
     <div id="about">
         <div>
@@ -395,7 +424,8 @@
                 </p>
             </div>
             <figure>
-                <img src="img/bonsy-recman-wp-admin-2.png" alt="Bonsy Recman WordPress Admin"/>
+                <img src="img/bonsy-recman-wp-admin-2.webp" alt="Bonsy Recman WordPress Admin" width="2644"
+                     height="1956"/>
             </figure>
         </div>
     </div>
@@ -410,14 +440,16 @@
             <div>
                 <h3>Streamline Your Workflow</h3>
                 <p>
-                    Display RecMan job posts automatically while focusing on design, leaving technicalities to the plugin.
+                    Display RecMan job posts automatically while focusing on design, leaving technicalities to the
+                    plugin.
                 </p>
             </div>
 
             <div>
                 <h3>Complete Design Control</h3>
                 <p>
-                    Customize your design, choose which fields to display, and let the plugin handle technical aspects for an effortless experience.
+                    Customize your design, choose which fields to display, and let the plugin handle technical aspects
+                    for an effortless experience.
                 </p>
             </div>
 
@@ -425,23 +457,27 @@
             <div>
                 <h3>Integrated Caching</h3>
                 <p>
-                    Benefit from built-in caching that avoids exceeding RecMan API limits while ensuring optimal site security and performance.
+                    Benefit from built-in caching that avoids exceeding RecMan API limits while ensuring optimal site
+                    security and performance.
                 </p>
             </div>
 
             <div>
                 <h3>SEO Optimized</h3>
                 <p>
-                    Create SEO-friendly URLs and metadata for better search engine rankings and effective social sharing.
+                    Create SEO-friendly URLs and metadata for better search engine rankings and effective social
+                    sharing.
                 </p>
             </div>
 
             <div>
                 <h3>Backward Compatibility</h3>
                 <p>
-                    The plugin's compatibility with RecMan API updates ensures smooth functionality, preventing disruptions to your site.
+                    The plugin's backward compatibility ensures that changes in the RecMan API won't affect your
+                    WordPress site, preventing disruptions.
                 </p>
             </div>
+
 
             <div>
                 <h3>Effortless WordPress Updates</h3>
@@ -453,21 +489,24 @@
             <div>
                 <h3>Multi-Language Support</h3>
                 <p>
-                    Automatic translations for Norwegian, English, and Swedish, with more languages available on request.
+                    Automatic translations for Norwegian, English, and Swedish, with more languages available on
+                    request.
                 </p>
             </div>
 
             <div>
                 <h3>Clean HTML Output</h3>
                 <p>
-                    Generate clean, structured HTML for job posts, making design integration more straightforward compared to the original code.
+                    Generate clean, structured HTML for job posts, making design integration more straightforward
+                    compared to the original code.
                 </p>
             </div>
 
             <div>
                 <h3>Department-Based Filtering</h3>
                 <p>
-                    Effortlessly display job posts from selected departments or corporations using the plugin's built-in filtering capabilities.
+                    Effortlessly display job posts from selected departments or corporations using the plugin's built-in
+                    filtering capabilities.
                 </p>
             </div>
 
@@ -475,21 +514,24 @@
             <div>
                 <h3>Flexible Filtering Options</h3>
                 <p>
-                    Design custom filters for various fields, letting candidates view jobs based on positions, locations, and more.
+                    Design custom filters for various fields, letting candidates view jobs based on positions,
+                    locations, and more.
                 </p>
             </div>
 
             <div>
                 <h3>Helpful Built-in Functions</h3>
                 <p>
-                    Utilize built-in functions for job post counts, excerpts, advanced filtering options, and support for free-text search queries.
+                    Utilize built-in functions for job post counts, excerpts, advanced filtering options, and support
+                    for free-text search queries.
                 </p>
             </div>
 
             <div>
                 <h3>Showcase Individual Job Posts</h3>
                 <p>
-                    Present individual job posts on your site or link directly to the RecMan page for convenient navigation.
+                    Present individual job posts on your site or link directly to the RecMan page for convenient
+                    navigation.
                 </p>
             </div>
 
