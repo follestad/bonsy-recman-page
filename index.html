@@ -26,7 +26,7 @@
             src: url('img/SF-Compact.woff2') format('woff2-variations');
             font-family: 'SF Compact';
             font-style: normal;
-            font-display: fallback;
+            font-display: swap;
             font-variation-settings: 'opsz' 19, 'wght' 400;
         }
 
@@ -42,7 +42,6 @@
             margin: 0;
             padding: 0;
             border: 0;
-            font-size: 100%;
             font: inherit;
             vertical-align: baseline;
         }
@@ -82,13 +81,13 @@
             font-variation-settings: 'opsz' 19, 'wght' 800;
         }
 
-        h2:not(.logo) {
+        h2 {
             font-variation-settings: 'opsz' 19, 'wght' 680;
             font-size: 2rem;
         }
 
-        @media( max-width: 800px) {
-            h2:not(.logo) {
+        @media ( max-width: 800px) {
+            h2 {
                 font-size: clamp(1.2rem, 8vw, 2.2rem);
             }
         }
@@ -108,7 +107,7 @@
             header { padding: 2em 1em;}
         }
 
-        header > h2 {
+        header > span {
             height: 2.5em;
             width: 200px;
             background: url('img/bonsy2_black.svg') no-repeat left center;
@@ -325,7 +324,7 @@
             justify-content: center;
         }
 
-        #getStarted h4 {
+        #getStarted h3 {
             margin: 2rem 0 1rem 0;
             font-size: 1.2rem;
         }
@@ -399,7 +398,7 @@
 <main>
 
     <header>
-        <h2 class="logo">Bonsy</h2>
+        <span>Bonsy</span>
         <a href="#contact">Contact</a>
     </header>
 
@@ -453,6 +452,7 @@
                      height="487"
                      data-srcset="img/recman-wp-plugin-675.webp 675w, img/recman-wp-plugin-1350.webp 1350w, img/recman-wp-plugin-840.webp 840w, img/recman-wp-plugin-420.webp 420w"
                      sizes="(max-width: 800px) 100vw, 675px"
+                     src=""
                 >
             </figure>
         </div>
@@ -581,7 +581,7 @@
                 you wish to continue using the plugin after the trial period, purchase a subscription.
             </p>
 
-            <h4>Code example</h4>
+            <h3>Code example</h3>
 
             <p style="margin-bottom: 0">How to display a job post field:</p>
 
@@ -610,7 +610,7 @@
 
             <p><i>You can also use the plugin to insert job posts as WordPress posts</i></p>
 
-            <h4>Built in shortcode</h4>
+            <h3>Built in shortcode</h3>
             <p>A built-in shortcode is available for showcasing the job post feed. Benefit from an easy-to-use template
                 engine and the ability to add custom CSS for a personalized look.</p>
             <pre><code><i class="r">[job_post_feed]</i></code></pre>
